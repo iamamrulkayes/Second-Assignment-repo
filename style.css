@@ -3,13 +3,15 @@ body{
     font-family: 'Rubik', sans-serif;
     margin: 0 auto;
 }
-
 .container{
-    display: flex;
-    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
 .tab ul{
     display: flex;
 }
@@ -26,6 +28,8 @@ body{
 }
 .camera{
     display: flex;
+    /* justify-content: space-between; */
+    margin: 0 auto;
 }
 .half{
     width: 50%;
@@ -62,8 +66,120 @@ body{
     background-repeat: no-repeat;
 
 }
-img:hover{
+.animation:hover{
     transform: scale(0.8) rotate(180deg);
     transition: transform 2s ease-in-out;
 
+}
+.ecommarce{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(247, 235, 235);
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 30px;
+}
+.site-logo{
+    padding: 35px;
+    
+}
+.popular{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title h2{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.title span{
+    font-size: 30px;
+    
+}
+.fa-star, .fa-star-half{
+    color: goldenrod;
+    margin-top: 6px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+}
+.article{
+border-radius: 15px;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+padding: 20px 20px;
+}
+.product-img img{
+    border-radius: 5px;
+    width: 350px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    justify-items: center;
+}
+.see-more{
+    text-decoration: none;
+    color: rgb(180, 18, 99);
+    float: right;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.before-footer{
+    width: 50%;
+}
+.before-footer p{
+    font-size: 15px;
+    text-align: justify;
+}
+.before-footer a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(241, 4, 190);
+    padding: 10px;
+    font-size: 20px;
+}
+.Featured{
+    display: flex;
+}
+.collection{
+    margin-bottom: 150px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+footer h1{
+    color: white;
+}
+footer h2{
+    color: white;
+}
+footer h3{
+    color: white;
+}
+footer .fab{
+    color: white;
+    padding: 0 15px;
+    font-size: 30px;
+}
+.join{
+    margin-bottom: 100px;
+}
+@media only screen and (max-width: 682px) {
+    .container{
+        width:  100%;
+    }
+.items{
+    grid-template-columns: repeat(1, 1fr);
+}
+.Featured{
+    flex-direction: column;
+}
 }
