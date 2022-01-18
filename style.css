@@ -28,7 +28,6 @@ nav{
 }
 .camera{
     display: flex;
-    /* justify-content: space-between; */
     margin: 0 auto;
 }
 .half{
@@ -54,7 +53,7 @@ nav{
     font-size: 25px;
 }
 .image{
-    /* border: 1px solid black; */
+    
     border-radius: 50%;
     text-align: center;
     width: 440px;
@@ -179,7 +178,20 @@ footer .fab{
 .items{
     grid-template-columns: repeat(1, 1fr);
 }
-.Featured{
+.Featured, .camera, .ecommarce{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
+
+@media only screen and (min-width: 682px) and (max-width) {
+    .container{
+        width:  100%;
+    }
+.items{
+    grid-template-columns: repeat(2, 1fr);
+}
+.Featured, .camera, .ecommarce{
     flex-direction: column;
 }
 }
